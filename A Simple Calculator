@@ -1,0 +1,71 @@
+package com.MiniProjectCalculator;
+
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        float num1;
+        System.out.print("Enter 1st Number: ");
+        Scanner scan = new Scanner(System.in);
+        num1 = scan.nextFloat();
+
+        float num2;
+        System.out.print("Enter 2nd Number: ");
+        Scanner scan2 = new Scanner(System.in);
+        num2 = scan2.nextFloat();
+
+        System.out.println("You have entered " + num1 + " and " + num2);
+
+        System.out.println(" ");
+
+        String prompt1 = "Enter 0 for addition";
+        String prompt2 = "Enter 1 for subtraction";
+        String prompt3 = "Enter 2 for multiplication";
+        String prompt4 = "Enter 4 for division";
+
+        System.out.println(prompt1);
+        System.out.println(prompt2);
+        System.out.println(prompt3);
+        System.out.println(prompt4);
+
+        System.out.println(" ");
+
+        int input = scan.nextInt();
+
+        System.out.println(" ");
+
+        switch (input) {
+            case 0:
+                System.out.println("You are adding these numbers");
+                System.out.print("The result of addition is: ");
+                System.out.println(num1 + num2);
+                break;
+
+
+            case 1:
+                System.out.println("You are subtracting these numbers");
+                System.out.print("The result of subtraction is: ");
+                System.out.println(num1 - num2);
+                break;
+
+            case 2:
+                System.out.println("You are multiplying these two numbers");
+                System.out.print("The result of multiplication is: ");
+                System.out.println(num1 * num2);
+                break;
+
+            case 3:
+                System.out.println("You are dividing these two numbers");
+                System.out.print("The result of division is: ");
+                System.out.print(num1 / num2);
+                break;
+
+            default:
+                System.out.println("Invalid Input");
+        }
+
+
+    }
+}
